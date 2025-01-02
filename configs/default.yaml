@@ -1,0 +1,14 @@
+# Rolling backtest of one-day value-at-risk (99%) and expected shortfall (97.5%).
+window: 250
+var_level: 0.99
+es_level: 0.975
+lambda: 0.94
+garch_refit: 21
+portfolios: 40        # the first holds all stocks equally, the others 20 random stocks with random weights
+holdings: 20
+seed: 3
+
+# Minimum-variance portfolios: number of stocks, estimation window, days between rebalances.
+minvar_assets: [25, 50, 100, 150, 200, 240]
+minvar_window: 250
+rebalance: 21
