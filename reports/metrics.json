@@ -1,0 +1,273 @@
+{
+ "data": {
+  "days": 1361.0,
+  "assets": 300.0,
+  "volatility": 0.2439450788,
+  "skewness": -0.565808331,
+  "excess_kurtosis": 10.15911388,
+  "worst_day": -0.1293031161,
+  "best_day": 0.1003651055
+ },
+ "backtest": {
+  "historical simulation": {
+   "exceedances": 720,
+   "expected": 444.4000000000004,
+   "ratio": 1.6201620162016188,
+   "frequency rejected": 18,
+   "clustering rejected": 21,
+   "joint test rejected": 24,
+   "shortfall ratio": 1.4632706558500002,
+   "severity": 1.165169832775,
+   "mean value-at-risk": 0.046840802198
+  },
+  "normal": {
+   "exceedances": 881,
+   "expected": 444.4000000000004,
+   "ratio": 1.9824482448244807,
+   "frequency rejected": 36,
+   "clustering rejected": 16,
+   "joint test rejected": 37,
+   "shortfall ratio": 1.681208555125,
+   "severity": 1.3083213493,
+   "mean value-at-risk": 0.039851326647500004
+  },
+  "Cornish-Fisher": {
+   "exceedances": 615,
+   "expected": 444.4000000000004,
+   "ratio": 1.3838883888388827,
+   "frequency rejected": 5,
+   "clustering rejected": 10,
+   "joint test rejected": 11,
+   "shortfall ratio": 1.2380501544275,
+   "severity": 1.074257371705,
+   "mean value-at-risk": 0.052819300184999994
+  },
+  "EWMA, normal": {
+   "exceedances": 851,
+   "expected": 444.4000000000004,
+   "ratio": 1.9149414941494134,
+   "frequency rejected": 34,
+   "clustering rejected": 2,
+   "joint test rejected": 30,
+   "shortfall ratio": 1.486597145975,
+   "severity": 1.123539384925,
+   "mean value-at-risk": 0.038468893224
+  },
+  "EWMA, filtered historical": {
+   "exceedances": 583,
+   "expected": 444.4000000000004,
+   "ratio": 1.3118811881188108,
+   "frequency rejected": 0,
+   "clustering rejected": 0,
+   "joint test rejected": 0,
+   "shortfall ratio": 1.1627953054475,
+   "severity": 1.0508880818,
+   "mean value-at-risk": 0.045268983033
+  },
+  "GARCH, normal": {
+   "exceedances": 746,
+   "expected": 444.4000000000004,
+   "ratio": 1.6786678667866772,
+   "frequency rejected": 24,
+   "clustering rejected": 3,
+   "joint test rejected": 18,
+   "shortfall ratio": 1.385464085775,
+   "severity": 1.1236022996000001,
+   "mean value-at-risk": 0.0381389384615
+  },
+  "GARCH, filtered historical": {
+   "exceedances": 599,
+   "expected": 444.4000000000004,
+   "ratio": 1.3478847884788467,
+   "frequency rejected": 1,
+   "clustering rejected": 2,
+   "joint test rejected": 2,
+   "shortfall ratio": 1.2327325671275,
+   "severity": 1.069781044925,
+   "mean value-at-risk": 0.04105799668825
+  }
+ },
+ "equal_weight": {
+  "historical simulation": {
+   "exceedances": 19,
+   "frequency p-value": 0.03074253357,
+   "clustering p-value": 0.03975290459,
+   "joint p-value": 0.01170380645,
+   "shortfall ratio": 1.530324166,
+   "severity": 1.180687603,
+   "mean value-at-risk": 0.04461135501
+  },
+  "normal": {
+   "exceedances": 27,
+   "frequency p-value": 5.122566053e-05,
+   "clustering p-value": 0.1670800622,
+   "joint p-value": 0.0001056291776,
+   "shortfall ratio": 1.807565618,
+   "severity": 1.394587084,
+   "mean value-at-risk": 0.03478070447
+  },
+  "Cornish-Fisher": {
+   "exceedances": 17,
+   "frequency p-value": 0.09946498996,
+   "clustering p-value": 0.2580938958,
+   "joint p-value": 0.1358061518,
+   "shortfall ratio": 1.355834548,
+   "severity": 1.075951559,
+   "mean value-at-risk": 0.04821240899
+  },
+  "EWMA, normal": {
+   "exceedances": 24,
+   "frequency p-value": 0.0007578791884,
+   "clustering p-value": 0.5430480299,
+   "joint p-value": 0.002863286074,
+   "shortfall ratio": 1.568278818,
+   "severity": 1.146288004,
+   "mean value-at-risk": 0.03315472888
+  },
+  "EWMA, filtered historical": {
+   "exceedances": 13,
+   "frequency p-value": 0.578942637,
+   "clustering p-value": 0.5788359737,
+   "joint p-value": 0.7348905529,
+   "shortfall ratio": 1.041191763,
+   "severity": 1.032825044,
+   "mean value-at-risk": 0.04040496556
+  },
+  "GARCH, normal": {
+   "exceedances": 22,
+   "frequency p-value": 0.003775316044,
+   "clustering p-value": 0.4533790421,
+   "joint p-value": 0.01138435092,
+   "shortfall ratio": 1.332682732,
+   "severity": 1.156726965,
+   "mean value-at-risk": 0.03264685731
+  },
+  "GARCH, filtered historical": {
+   "exceedances": 13,
+   "frequency p-value": 0.578942637,
+   "clustering p-value": 0.5788359737,
+   "joint p-value": 0.7348905529,
+   "shortfall ratio": 1.063805335,
+   "severity": 1.01886873,
+   "mean value-at-risk": 0.0376675645
+  }
+ },
+ "minvar_volatility": {
+  "25": {
+   "equal weight": 0.2900403944,
+   "inverse variance": 0.2476790747,
+   "minimum variance, sample covariance": 0.2191688771,
+   "minimum variance, shrunk covariance": 0.2195157014
+  },
+  "50": {
+   "equal weight": 0.2593072916,
+   "inverse variance": 0.2229752158,
+   "minimum variance, sample covariance": 0.1894872779,
+   "minimum variance, shrunk covariance": 0.1844671496
+  },
+  "100": {
+   "equal weight": 0.251866715,
+   "inverse variance": 0.2173788759,
+   "minimum variance, sample covariance": 0.1910801487,
+   "minimum variance, shrunk covariance": 0.1694351264
+  },
+  "150": {
+   "equal weight": 0.2524255946,
+   "inverse variance": 0.2219192197,
+   "minimum variance, sample covariance": 0.2009175713,
+   "minimum variance, shrunk covariance": 0.1635503432
+  },
+  "200": {
+   "equal weight": 0.2537572502,
+   "inverse variance": 0.2236495393,
+   "minimum variance, sample covariance": 0.2395042002,
+   "minimum variance, shrunk covariance": 0.1583234348
+  },
+  "240": {
+   "equal weight": 0.2580072213,
+   "inverse variance": 0.2259161913,
+   "minimum variance, sample covariance": 0.5060612941,
+   "minimum variance, shrunk covariance": 0.1580985714
+  }
+ },
+ "shrinkage_gain": {
+  "25": -0.0015824523289489356,
+  "50": 0.02649322084118666,
+  "100": 0.11327718995018765,
+  "150": 0.18598287774544675,
+  "200": 0.33895341013731417,
+  "240": 0.6875900740815024
+ },
+ "decomposition": {
+  "volatility": 0.0138621627809,
+  "sum": 0.0138621627809
+ },
+ "checks": [
+  {
+   "area": "backtest",
+   "check": "filtered historical simulation is closest to the expected exceedance frequency",
+   "status": "PASS",
+   "detail": "1.31 and 1.35 times the expected number, others 1.38 to 1.98"
+  },
+  {
+   "area": "backtest",
+   "check": "the best method is within 20% of the expected frequency",
+   "status": "WARN",
+   "detail": "1.31 times the expected number: every method still under-forecasts on this sample"
+  },
+  {
+   "area": "backtest",
+   "check": "the normal method has too many exceedances",
+   "status": "PASS",
+   "detail": "1.98 times the expected number"
+  },
+  {
+   "area": "backtest",
+   "check": "filtering reduces rejections of the frequency test",
+   "status": "PASS",
+   "detail": "1 of 40 portfolios at most, against 36 (normal) and 18 (historical)"
+  },
+  {
+   "area": "backtest",
+   "check": "filtered expected shortfall is the best calibrated",
+   "status": "PASS",
+   "detail": "shortfall ratio 1.16 and 1.23, others 1.24 to 1.68"
+  },
+  {
+   "area": "backtest",
+   "check": "false-alarm rate of the tests is plausible for a good method",
+   "status": "PASS",
+   "detail": "1 of 40 rejected at the 5% level"
+  },
+  {
+   "area": "covariance",
+   "check": "shrinkage never increases realised volatility",
+   "status": "PASS",
+   "detail": "reduction -0.2%, 2.6%, 11.3%, 18.6%, 33.9%, 68.8%"
+  },
+  {
+   "area": "covariance",
+   "check": "the gain grows as stocks approach the number of days",
+   "status": "PASS",
+   "detail": "-0.2% with 25 stocks, 68.8% with 240"
+  },
+  {
+   "area": "covariance",
+   "check": "shrunk minimum variance beats the simple portfolios",
+   "status": "PASS",
+   "detail": "largest universe: 15.8% against 22.6% (inverse variance) and 25.8% (equal weight)"
+  },
+  {
+   "area": "covariance",
+   "check": "no matrix failed to factorise",
+   "status": "PASS",
+   "detail": "0 failures"
+  },
+  {
+   "area": "decomposition",
+   "check": "contributions add up to the portfolio volatility",
+   "status": "PASS",
+   "detail": "relative gap 0.0e+00"
+  }
+ ]
+}
